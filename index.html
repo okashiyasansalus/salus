@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>かなちゃんのお店</title>
+  <style>
+    body {
+      font-family: 'ヒラギノ角ゴシック', 'メイリオ', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff7f50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    nav {
+      background-color: #ffa07a;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #ff6347;
+      border-bottom: 2px solid #ff6347;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .intro {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      max-height: 180px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 0 0 10px;
+      color: #ff6347;
+    }
+    footer {
+      background-color: #ff7f50;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 480px) {
+      header {
+        font-size: 1.8em;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>かなちゃんのお店</header>
+  <nav>
+    <a href="#about">お店について</a>
+    <a href="#products">商品一覧</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+  <main>
+    <section id="about" class="intro">
+      <h2>お店について</h2>
+      <p>かなちゃんのお店へようこそ！<br>
+         地元の新鮮な食材を使った手作りの美味しい料理を提供しています。  
+         あたたかい雰囲気でみなさまのお越しをお待ちしています。</p>
+    </section>
+
+    <section id="products">
+      <h2>商品一覧</h2>
+      <div class="products">
+        <div class="product">
+          <img src="https://via.placeholder.com/300x180?text=商品1" alt="商品1" />
+          <h3>季節のフルーツタルト</h3>
+          <p>新鮮なフルーツをたっぷり使ったタルトです。</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x180?text=商品2" alt="商品2" />
+          <h3>手作りクッキーセット</h3>
+          <p>人気のクッキーを詰め合わせにしました。</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x180?text=商品3" alt="商品3" />
+          <h3>オーガニックハーブティー</h3>
+          <p>心落ち着く香りのハーブティーをどうぞ。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top: 50px;">
+      <h2>お問い合わせ</h2>
+      <p>ご質問・ご予約はこちらまで：</p>
+      <p><strong>Email:</strong> info@kanas-shop.jp</p>
+      <p><strong>電話番号:</strong> 090-1234-5678</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 かなちゃんのお店 All rights reserved.
+  </footer>
+</body>
+</html>
